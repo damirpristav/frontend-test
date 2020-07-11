@@ -23,9 +23,7 @@ const Contact = () => {
       setSuccess(response.data.message);
       setEmail('');
       setMessage('');
-      console.log(response);
     } catch (err) {
-      console.log(err.response.data);
       if(err.response.data && err.response.data.code === 422) {
         setErrors(err.response.data.errors);
       }else {

@@ -12,7 +12,6 @@ app.use(cors());
 
 // Contact route
 app.post('/api/contact', (req, res) => {
-  console.log(req.body);
   const { email, message } = req.body;
   let errors = {};
 
