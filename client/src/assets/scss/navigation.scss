@@ -1,0 +1,42 @@
+@use 'variables' as *;
+
+.navigation {
+  background-color: #fff;
+  padding: 20px 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__brand {
+    a {
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 20px;
+      color: $primary-color;
+    }
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+
+    &_item {
+      margin-left: 20px;
+
+      a {
+        color: $text-color;
+        text-decoration: none;
+        cursor: pointer;
+        transition: color .3s ease;
+
+        &:hover,
+        &.active {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
