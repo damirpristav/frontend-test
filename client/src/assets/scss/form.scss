@@ -22,6 +22,10 @@
       &:focus {
         border-color: $primary-color;
       }
+
+      &.error {
+        border-color: $error-color;
+      }
     }
 
     textarea {

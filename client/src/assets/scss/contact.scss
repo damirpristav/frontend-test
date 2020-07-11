@@ -1,12 +1,29 @@
+@use 'variables' as *;
+
 .contact {
   max-width: 600px;
   margin: 50px auto;
-  background-color: #fff;
-  padding: 20px;
 
   h2 {
     font-size: 30px;
     margin-bottom: 20px;
     text-align: center;
+  }
+
+  &__alert {
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+
+    &--error {
+      border: 1px solid $error-color;
+      color: $error-color;
+    }
+
+    &--success {
+      border: 1px solid $primary-color;
+      color: $primary-color;
+    }
   }
 }
