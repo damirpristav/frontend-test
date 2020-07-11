@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 const Navigation = ({ onMobileMenuOpen }) => {
   return(
@@ -24,6 +25,10 @@ const Navigation = ({ onMobileMenuOpen }) => {
       </div>
     </nav>
   );
+}
+
+Navigation.propTypes = {
+  onMobileMenuOpen: PropTypes.func.isRequired
 }
 
 export default Navigation;

@@ -3,7 +3,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: [
+    './node_modules/regenerator-runtime/runtime.js',
+    './src/index.js'
+  ],
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',

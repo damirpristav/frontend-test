@@ -1,0 +1,20 @@
+@use 'variables' as *;
+
+.btn {
+  display: inline-flex;
+  background-color: $primary-color;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  font-family: $ff-primary;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+
+  &:active {
+    background-color: darken($primary-color, 5);
+  }
+}

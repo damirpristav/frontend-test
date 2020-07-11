@@ -5,6 +5,7 @@ import './App.scss';
 import Navigation from './components/Navigation';
 import MobileMenu from './components/MobileMenu';
 import Homepage from './components/Homepage';
+import Contact from './components/Contact';
 
 const App = () => {
   const [mobileMenuOpened, setMobileMenuOpened] = useState(false);
@@ -27,7 +28,7 @@ const App = () => {
             <Homepage />
           </Route>
           <Route path="/contact">
-            <h1>Contact</h1>
+            <Contact />
           </Route>
         </Switch>
       </div>

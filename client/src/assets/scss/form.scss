@@ -1,0 +1,37 @@
+@use 'variables' as *;
+
+.form {
+
+  &__group {
+    margin-bottom: 20px;
+
+    label {
+      display: block;
+    }
+
+    input,
+    textarea {
+      display: block;
+      width: 100%;
+      border: 1px solid $border-color;
+      outline: 0;
+      padding: 15px;
+      font-family: $ff-primary;
+      color: $text-color;
+
+      &:focus {
+        border-color: $primary-color;
+      }
+    }
+
+    textarea {
+      min-height: 140px;
+    }
+  }
+
+  &__error {
+    color: $error-color;
+    font-size: 12px;
+    padding: 5px 0;
+  }
+}
