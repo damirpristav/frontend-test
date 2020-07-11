@@ -16,12 +16,41 @@
       cursor: pointer;
       font-size: 20px;
       color: $primary-color;
+
+      @media (max-width: 767px) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__bars {
+    cursor: pointer;
+    display: none;
+
+    @media (max-width: 767px) {
+      display: block;
+    }
+
+    span {
+      display: block;
+      width: 15px;
+      height: 2px;
+      margin-bottom: 2px;
+      background-color: $primary-color;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 
   &__list {
     display: flex;
     list-style: none;
+
+    @media (max-width: 767px) {
+      display: none;
+    }
 
     &_item {
       margin-left: 20px;
